@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mon Site Personnel</title>
+  <style>
+    /* Styles généraux */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Styles de l'en-tête */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Styles de la barre de navigation */
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 10px;
+    }
+
+    /* Styles du contenu principal */
+    main {
+      padding: 20px;
+    }
+
+    /* Styles des sections */
+    section {
+      padding: 40px;
+      background-color: #f9f9f9;
+      margin-bottom: 40px;
+    }
+
+    /* Styles des liens */
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Styles du pied de page */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Styles spécifiques aux projets */
+    .project {
+      margin-bottom: 20px;
+    }
+
+    .project-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .project-media {
+      margin-top: 10px;
+    }
+    /* Styles de l'image personnelle */
+    .image-personnelle {
+      width: 200px;
+      margin: 20px auto;
+      display: block;
+    }
+      /* Styles de la section contenant les images */
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+    
+    /* Styles des images */
+    .slideshow-container img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <h1>L'Électronique et l'Informatique à travers Mes Yeux</h1>
+  </header>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#a-propos">À Propos</a>
+    <a href="#competences">Compétences</a>
+    <a href="#projets">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  </head>
+<body>
+  <div class="slideshow-container">
+    <img src="images/IME1.jpg" alt="Image 1">
+    <img src="images/IME2.jpg" alt="Image 2">
+    <img src="images/IME3.jpg" alt="Image 3">
+    <img src="images/IM8.jpg" alt="Image 4">
+    <img src="images/IM9.jpg" alt="Image 5">
+  </div>
+
+  <script>
+    // Défilement automatique des images
+    document.addEventListener('DOMContentLoaded', function() {
+      const slideshowContainer = document.querySelector('.slideshow-container');
+      const images = slideshowContainer.getElementsByTagName('img');
+      let index = 0;
+
+      function changeImage() {
+        for (let i = 0; i < images.length; i++) {
+          images[i].style.display = 'none';
+        }
+        index = (index + 1) % images.length;
+        images[index].style.display = 'block';
+      }
+
+      setInterval(changeImage, 3000); // Changement d'image toutes les 3 secondes
+    });
+  </script>
+</body>
+  <main>
+    <section id="accueil">
+      <h2>Accueil</h2>
+      <p>Bienvenue sur mon site personnel d'étudiant en électronique et informatique ! Je m'appelle HOUNKPESSODE C.B.Sergio et je suis passionné par les technologies et leur application dans le domaine de l'électronique et de l'informatique.</p>
+      <!-- Autres paragraphes d'introduction -->
+    </section>
+    <section id="a-propos">
+      <h2>À Propos</h2>
+     <p>Je suis un étudiant en électronique et informatique passionné par les technologies et leur application pratique. Mon objectif est de contribuer au développement de solutions innovantes dans ces domaines en combinant mes compétences en électronique et en programmation.</p>
+  <p>J'ai choisi de me spécialiser en électronique pour maîtriser la conception de circuits, les systèmes embarqués et l'intégration de technologies. Parallèlement, j'ai développé des compétences en programmation pour pouvoir concevoir des logiciels et des applications qui interagissent avec des systèmes électroniques.</p>
+  <p>Au cours de mes études, j'ai acquis une solide formation théorique et pratique en électronique, en programmation et en résolution de problèmes. J'ai travaillé sur divers projets académiques et personnels, ce qui m'a permis de mettre en pratique mes connaissances et d'acquérir de l'expérience.</p>
+  <p>Je suis constamment à la recherche de nouvelles opportunités d'apprentissage et de projets stimulants. Je suis passionné par l'apprentissage continu et je reste constamment à jour avec les dernières avancées technologiques dans le domaine de l'électronique et de l'informatique.</p>
+  <p>Je suis également ouvert à la collaboration avec d'autres étudiants, professionnels et passionnés du domaine. Je crois en l'importance du partage des connaissances et de la collaboration pour favoriser l'innovation.</p>
+  <p>N'hésitez pas à parcourir mon site pour en savoir plus sur mes compétences, mes projets et mes réalisations. Si vous souhaitez en savoir plus ou discuter de collaborations potentielles, je serai ravi d'échanger avec vous. Vous pouvez me contacter via les informations fournies sur la page de contact.</p>
+    </section>
+    <section id="competences">
+      <h2>Compétences</h2>
+       <ul>
+    <li>Conception de circuits électroniques</li>
+    <li>Programmation en langages tels que C, C++, pas trop fort en Python</li>
+    <li>Développement d'applications web avec HTML, CSS </li>
+    <li>Utilisation de microcontrôleurs et de systèmes embarqués</li>
+    <li>Résolution de problèmes techniques</li>
+    <li>Analyse et interprétation de données</li>
+    <li>Utilisation d'outils de simulation électronique</li>
+    <li>Collaboration en équipe et gestion de projet</li>
+  </ul>
+    </section>
+    <section id="projets">
+      <h2>Projets</h2>
+      <div class="project">
+        <h3 class="project-title"> Projet 1 Système automatisé pour la gestion de trois sources d'alimentation alternative</h3>
+        <p class="project-description">Ce projet consistait à concevoir et mettre en place un système automatisé capable de basculer entre trois sources d'alimentation alternative (par exemple, solaire, SBEE et groupe electrogene) en fonction des conditions environnementales et des besoins énergétiques. J'ai réalisé la conception du système, le câblage, la programmation du microcontrôleur et les tests de fonctionnement.</p>
+        <div class="project-media">
+          <img src="images/IM6.jpg" alt="Image Projet 1" width="300">
+        </div>
+      </div>
+      <div class="project">
+        <h3 class="project-title">Projet 2 alimentation continue et alternative</h3>
+        <p class="project-description">Ce projet avait pour objectif de concevoir un système d'alimentation capable de fournir une alimentation continue de 5V, 9v, 12V et 24v ainsi qu'une alimentation alternative de 12v et 24v. J'ai réalisé la conception du circuit d'alimentation, le dimensionnement des composants, le câblage et les tests de fonctionnement.</p>
+        <div class="project-media">
+          <img src="images/IM5.jpg" alt="Image Projet 2" width="300">
+        </div>
+      </div>
+      <div class="project">
+        <h3 class="project-title">Projet 3 Détecteur de niveau d'eau </h3>
+        <p class="project-description">Ce projet visait à concevoir un détecteur de niveau d'eau qui pouvait être utilisé pour surveiller le niveau d'eau dans un réservoir ou une cuve. J'ai réalisé la conception du circuit électronique, l'assemblage des capteurs, la programmation du microcontrôleur et les tests de fonctionnement. Le détecteur était capable de fournir des informations précises sur le niveau d'eau et d'activer des dispositifs de contrôle en conséquence, j'ai d'autre projet réaliser  que je  n'afficherait pas ici.</p>
+        <div class="project-media">
+          <img src="images/im7.jpg" alt="Image Projet 3" width="300">
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>N'hésitez pas à me contacter :</p>
+      <ul>
+        <li>Email : <a href="mailto:hounkpessodes@gmail.com">hounkpessodes@gmail.com</a></li>
+        <li>Téléphone :(+229) 69 64 02 54 / 60286592
+</li>
+        <li><a href="pdf/mon cv.pdf">Télécharger mon CV</a></li>
+        <li>Facebook : <a href="https://www.facebook.com/sergio.hounkpessode.31">Profil Facebook</a></li>
+        <li>Gmail : <a href="mailto:hounkpessodes@gmail.com">Envoyer un email</a></li>
+        <li>WhatsApp : <a href="https://wa.me/qr/LQJTP6BBMFWYN1">Chat sur WhatsApp</a></li>
+        <li>LinkedIn : <a href="https://www.linkedin.com/in/bienvenue-hounkpessode-a8a14a1b7">Profil LinkedIn</a></li>
+      </ul>
+    </section>
+    <img src="D:\document sergio\IM4.jpg" alt="Image Personnelle" class="image-personnelle">
+  </main>
+  <footer>
+    <p>© 2023 Mon Site Personnel. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
